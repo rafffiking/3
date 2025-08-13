@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SELAMAT HARI LAHIR IBUKU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --pink:#ffd6e7;
+      --pink-strong:#ff8fb7;
+      --text:#2b1f1f;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%; margin:0;}
+    body{
+      font-family:"Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      /* White & Pink background */
+      background:
+        linear-gradient(180deg, var(--white) 55%, var(--pink) 55%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .card{
+      width:min(900px, 94vw);
+      background:transparent; /* Follow the page bg (no extra box) */
+      text-align:center;
+    }
+    .title{
+      margin:0 0 10px;
+      font-size:clamp(28px, 6.4vw, 56px);
+      font-weight:800;
+      letter-spacing:.06em;
+      color:#e23688;
+      text-transform:uppercase;
+    }
+    .cake{
+      width:min(220px, 44vw);
+      height:auto;
+      margin:8px auto 16px;
+      display:block;
+      filter: drop-shadow(0 6px 10px rgba(0,0,0,.12));
+    }
+    .message{
+      margin:0 auto;
+      max-width:60ch;
+      font-size:clamp(16px, 2.6vw, 20px);
+      line-height:1.75;
+      padding:0 8px;
+    }
+    .signature{
+      margin-top:18px;
+      font-weight:600;
+    }
+
+    /* Small helper line to gently separate the two bg colours */
+    .edge{
+      height:2px;
+      width:min(900px, 94vw);
+      background:linear-gradient(90deg, transparent, var(--pink-strong), transparent);
+      margin:12px auto 0;
+    }
+
+    @media (prefers-reduced-motion: no-preference){
+      .title{ transform:translateY(-4px); }
+      .cake{ transform:translateY(-2px); }
+    }
+
+    /* Print-friendly */
+    @media print{
+      body{ background:#fff; }
+      .edge{ display:none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="tajuk">
+    <h1 id="tajuk" class="title">SELAMAT HARI LAHIR IBUKU</h1>
+    <!-- Colourful cake (replaces LOVE icon) -->
+    <svg class="cake" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kek warna-warni">
+      <!-- candle -->
+      <rect x="114" y="38" width="12" height="42" rx="6" fill="#ffd166"/>
+      <path d="M120 22c6 0 10 4 10 9 0 7-7 9-10 16-3-7-10-9-10-16 0-5 4-9 10-9z" fill="#ff6aa2"/>
+      <!-- top icing -->
+      <rect x="40" y="82" width="160" height="38" rx="12" fill="#fff"/>
+      <path d="M48 104c8 0 8-8 16-8s8 8 16 8 8-8 16-8 8 8 16 8 8-8 16-8 8 8 16 8 8-8 16-8 8 8 16 8"
+            stroke="#ffc4db" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- layers -->
+      <rect x="35" y="120" width="170" height="30" rx="10" fill="#ff8fab"/>
+      <rect x="35" y="150" width="170" height="30" rx="10" fill="#ffd166"/>
+      <rect x="35" y="180" width="170" height="30" rx="10" fill="#6ed0ff"/>
+      <!-- sprinkles -->
+      <g stroke="#ff6aa2" stroke-width="4" stroke-linecap="round">
+        <path d="M70 90 l0 6"/><path d="M92 92 l0 6"/><path d="M114 90 l0 6"/><path d="M136 92 l0 6"/><path d="M158 90 l0 6"/>
+      </g>
+      <!-- plate -->
+      <ellipse cx="120" cy="214" rx="90" ry="8" fill="#f2f2f2"/>
+    </svg>
+
+    <p class="message">
+      Semoga Allah limpahkan rahmat, kesihatan yang baik, dan kebahagiaan yang tidak putus buat ibu kesayangan.
+      Terima kasih atas kasih sayang dan pengorbanan yang tak ternilai. Hari ini adalah tentang ibu —
+      moga setiap hari mendatang lebih indah daripada semalam. 🎂💗
+    </p>
+    <p class="signature">Dengan kasih, <span contenteditable="true" aria-label="Nama anda">[Nama Anda]</span></p>
+
+    <div class="edge" aria-hidden="true"></div>
+  </main>
+</body>
+</html>
